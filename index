@@ -17,10 +17,29 @@
         </nav>
     </header>
     <main>
-        div#
+        <div id="Background">
+
+        </div>
+        <div id="Numbers">
+
+        </div>
+        <div id="Instagram">
+
+        </div>
+        <div id="Founders">
+
+        </div>
     </main>
     <footer>
+        <div id="Mail_letter">
 
+        </div>
+        <div id="Contact">
+            
+        </div>
+        <div id="Informations">
+
+        </div>
     </footer>
 </body>
 </html>
