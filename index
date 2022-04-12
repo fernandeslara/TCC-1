@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Page Bar-->
+    <title>Iniciativa Íris</title>
+    <link rel="icon" type="image/jpg" href="/public/images/Frame.svg"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- View Port -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciativa Íris</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/public/css/Index.css">
+    <link rel="stylesheet" href="/public/css/Global.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
+        <div>
+            <img id="Logo" src="/public/images/Frame.svg" alt="logo íris" height="45px">
+            <a id="Project-name" href="/public/scripts/Index.html">Iniciativa Íris</a>
+        </div>
         <nav>
-            <li>Home</li>
-            <li>Sobre nós</li>
-            <li>Blog</li>
-            <li>Trabalhe Conosco</li>
-            <li>Doe</li>
+            <div id="Menu" onclick="toggleMenu()">
+                Menu
+                
+                <span id="Hamburguer"></span>
+            </div>
+
+
+            <div id="Login">
+                <img src="/public/images/login-icon.png" alt="" height="30px">
+            </div>
+            <div id="Menu-bar">
+                <div id="Bg-bar"></div>
+                <div id="Bar-content">
+                    <li><a href="" class="Page-link">Início</a></li>
+                    <li><a href="" class="Cool-link">Sobre nós</a></li>
+                    <li><a href="" class="Cool-link">Blog</a></li>
+                    <li><a href="" class="Cool-link">Trabalhe Conosco</a></li>
+                    <li><a href="" class="Cool-link">Doe</a></li>
+                </div>
+            </div>
+
+            <!-- SCRIPT -->
+            <script src="/public/js/Menu.js"></script>
         </nav>
     </header>
     <main>
@@ -35,7 +70,7 @@
 
         </div>
         <div id="Contact">
-            
+
         </div>
         <div id="Informations">
 
