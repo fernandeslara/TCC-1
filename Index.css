@@ -1,0 +1,13 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 13vh 83vh  65vh 90vh 130vh 130vh;
+    grid-template-areas: 
+        'nav-bar',
+        'bg'
+        'numbers'
+        'instagram'
+        'founders'
+        'informations';
+}
+
