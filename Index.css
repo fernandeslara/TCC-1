@@ -11,3 +11,9 @@ body {
         'informations';
 }
 
+#Background{
+    grid-area: 'bg';
+    background: url(https://www.petlove.com.br/dicas/wp-content/uploads/2021/08/Gato-filhote-7.jpg);
+    height: 83vh;
+    width: 100vw;
+}
