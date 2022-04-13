@@ -22,13 +22,12 @@
 <body>
     <header>
         <div>
-            <img id="Logo" src="/public/images/Frame.svg" alt="logo íris" height="45px">
+            <img id="Logo" src="/public/images/Frame.png" alt="logo íris" height="35px">
             <a id="Project-name" href="/public/scripts/Index.html">Iniciativa Íris</a>
         </div>
         <nav>
             <div id="Menu" onclick="toggleMenu()">
                 Menu
-                
                 <span id="Hamburguer"></span>
             </div>
 
