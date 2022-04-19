@@ -11,6 +11,8 @@ body {
         'informations';
 }
 
+/* IMAGEM BANNER */
+
 #Background{
     box-sizing: border-box;
     display: flex;
@@ -62,7 +64,7 @@ div div span{
     width: 35rem;
     align-items: center;
     font-size: 60%;
-    transform: translate(170%, 220%);
+    transform: translate(150%, 190%);
 }
 
 #Subscribe span{
@@ -75,4 +77,36 @@ div div span{
     background: var(--blue);
     cursor: pointer;
     transition: .5s;
+}
+
+/* NÚMEROS DE IMPACTADOS */
+
+#Numbers {
+    grid-area: 'numbers';
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: 'bg';
+    height: 65vh;
+    width: 100vw;
+    gap: 5rem;
+    padding-left: 10vw;
+}
+
+#Numbers div{
+    display: inline-block;
+    font-size: 600%;
+    font-weight: bold;
+    color: var(--pink);
+    letter-spacing: 0.5rem;
+    width: 20vw;
+}
+
+#Numbers div span{
+    letter-spacing: normal;
+    font-weight: 500;
+    font-size: 30%;
+    color: var(--black);
+    margin-left: -10rem;
 }
