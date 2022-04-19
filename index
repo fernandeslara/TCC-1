@@ -22,8 +22,12 @@
 <body>
     <header>
         <div>
-            <img id="Logo" src="/public/images/Frame.png" alt="logo íris" height="35px">
-            <a id="Project-name" href="/public/scripts/Index.html">Iniciativa Íris</a>
+            <a href="/public/scripts/Index.html">
+                <img id="Logo" src="/public/images/Logo_black.png" alt="logo íris" height="47px">
+            </a>
+            <a id="Project-name" href="/public/scripts/Index.html">
+                Iniciativa Íris
+            </a>
         </div>
         <nav>
             <div id="Menu" onclick="toggleMenu()">
@@ -33,7 +37,7 @@
 
 
             <div id="Login">
-                <img src="/public/images/login-icon.png" alt="" height="30px">
+                <img src="/public/images/login-icon-black.png" alt="" height="30px">
             </div>
             <div id="Menu-bar">
                 <div id="Bg-bar"></div>
@@ -52,7 +56,14 @@
     </header>
     <main>
         <div id="Background">
-
+            <div>
+                <div id="Bg_filter"></div>
+                
+                <div class="Bg_content"></div>
+                <span>Make a good <br> decision</span>
+                <div class="Bg_content Down_bar"></div>
+                <a href="#" id="Subscribe"><span>Inscreva-se</span></a>
+            </div>
         </div>
         <div id="Numbers">
 
