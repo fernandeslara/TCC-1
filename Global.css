@@ -74,8 +74,7 @@ header {
     grid-area: 'nav-bar';
     display: flex;
     align-items: center;
-    box-shadow: 0 0 20px -1px rgb(50, 50, 50);
-    background: var(--soft-black);
+    background: var(--white);
     justify-content: space-between;
 }
 
@@ -91,14 +90,14 @@ header div{
 
 #Project-name {
     margin-left: 1rem;
-    color: var(--white);
+    color: var(--black);
     font-size: 220%;
     font-family: "Poppins";
     font-weight: 700;
 }
 
 #Menu{
-    color: var(--white);
+    color: var(--black);
     font-size: 120%;
     font-weight: 700;
     margin-right: 3vw;
@@ -117,17 +116,18 @@ header div{
     margin-left: -85vw;
     height: 6vh;
     align-items: center;
-    width: 100vw;
+    width: 110vw;
     position: absolute;
-    border-bottom: 2px solid var(--white);
+    z-index: 110;
 }
 
 #Bg-bar {
     background: var(--pink);
     position: absolute;
-    width: 100vw;
+    width: 110vw;
     height: 6vh;
     display: none;
+    border-bottom: 3px solid var(--white);
 }
 
 #Bg-bar::before {
@@ -142,15 +142,8 @@ header div{
 }
 
 #Hamburguer {
-    border-top: 2px solid var(--white);
+    border-top: 2px solid var(--black);
     width: 20px;
-}
-
-#Hamburgue:hover {
-    
-    
-    border-top: 2px solid var(--pink);
-    transition: .3s;
 }
 
 #Hamburguer::after, #Hamburguer::before{
@@ -158,7 +151,7 @@ header div{
     display: block;
     width: 20px;
     height: 2px;
-    background: var(--white);
+    background: var(--black);
     margin-top: 5px;
     transition: .3s;
     position: relative;
@@ -220,10 +213,10 @@ nav a{
     width: 0;
     height: 2px;
     background: #fff;
-    transition: width .3s;
+    transition: .3s;
 }
 
 .Cool-link:hover::after {
     width: 100%;
-    transition: width .3s
+    transition: .3s
 }
