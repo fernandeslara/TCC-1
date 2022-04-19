@@ -3,7 +3,7 @@
 <head>
     <!--Page Bar-->
     <title>Iniciativa Íris</title>
-    <link rel="icon" type="image/jpg" href="/public/images/Frame.svg"/>
+    <link rel="icon" type="image/jpg" href="/public/images/Logo.png"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -23,7 +23,7 @@
     <header>
         <div>
             <a href="/public/scripts/Index.html">
-                <img id="Logo" src="/public/images/Logo_black.png" alt="logo íris" height="47px">
+                <img id="Logo" src="/public/images/Logo.png" alt="logo íris" height="47px">
             </a>
             <a id="Project-name" href="/public/scripts/Index.html">
                 Iniciativa Íris
@@ -37,7 +37,7 @@
 
 
             <div id="Login">
-                <img src="/public/images/login-icon-black.png" alt="" height="30px">
+                <img src="/public/images/login.png" alt="" height="30px">
             </div>
             <div id="Menu-bar">
                 <div id="Bg-bar"></div>
@@ -66,7 +66,22 @@
             </div>
         </div>
         <div id="Numbers">
-
+            <div>
+                8k <br>
+                <span>Pessoas impactadas</span>
+            </div>
+            <div>
+                120 <br>
+                <span>Voluntários</span>
+            </div>
+            <div>
+                13+ <br>
+                <span>Projetos e programas</span>
+            </div>
+            <div>
+                3 <br>
+                <span>Continentes envolvidos</span>
+            </div>
         </div>
         <div id="Instagram">
 
