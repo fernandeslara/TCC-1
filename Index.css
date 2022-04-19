@@ -1,7 +1,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 13vh 83vh  65vh 90vh 130vh 130vh;
+    grid-template-rows: 13vh 84vh  65vh 90vh 130vh 130vh;
     grid-template-areas: 
         'nav-bar',
         'bg'
@@ -12,8 +12,67 @@ body {
 }
 
 #Background{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-area: 'bg';
-    background: url(https://www.petlove.com.br/dicas/wp-content/uploads/2021/08/Gato-filhote-7.jpg);
-    height: 83vh;
+    background: url(/public/images/parallax_bg.jpg);
+    background-size: 100% 150%;
+    height: 84vh;
     width: 100vw;
+    padding-right: 15rem;
+}
+
+div div span{
+    width: 40rem;
+    font-size: 350%;
+    display: flex;
+    color: var(--soft-grey);
+    transform: translate(30%);
+}
+
+#Bg_filter{
+    top: 0;
+    left: 0;
+    margin-top: 13vh;
+    height: 84vh;
+    width: 100vw;
+    position: absolute;
+    background-color: var(--black);
+    opacity: 0.2;
+}
+
+.Bg_content{
+    position: absolute;
+    border-top: 5px solid var(--white);
+    width: 45rem;
+}
+
+.Bg_content.Down_bar{
+    margin-left: 10vw;
+}
+
+#Subscribe{
+    position: absolute;
+    box-sizing: border-box;
+    color: var(--white);
+    background: black;
+    height: 8rem;
+    width: 35rem;
+    align-items: center;
+    font-size: 60%;
+    transform: translate(170%, 220%);
+}
+
+#Subscribe span{
+    margin-left: -10rem;
+    margin-top: 1.5rem;
+    font-weight: 700;
+}
+
+#Subscribe:hover{
+    background: var(--blue);
+    cursor: pointer;
+    transition: .5s;
 }
