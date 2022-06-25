@@ -16,7 +16,7 @@
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;300;500;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -30,16 +30,22 @@
             </a>
         </div>
         <nav>
-            <div id="Menu" onclick="toggleMenu()">
-                Menu
-                <span id="Hamburguer"></span>
+            <div id="Menu">
+                <li><a href="" id="On-Page">Início</a></li>
+                <li><a href="">Sobre Nós</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Trabalhe Conosco</a></li>
+                <li><a href="">Doe</a></li>
             </div>
 
 
             <div id="Login">
                 <img src="/public/images/login.png" alt="" height="30px">
             </div>
-            <div id="Menu-bar">
+
+            <!-- MENU MOBILE -->
+
+            <!-- <div id="Menu-bar">
                 <div id="Bg-bar"></div>
                 <div id="Bar-content">
                     <li><a href="" class="Page-link">Início</a></li>
@@ -48,13 +54,17 @@
                     <li><a href="" class="Cool-link">Trabalhe Conosco</a></li>
                     <li><a href="" class="Cool-link">Doe</a></li>
                 </div>
-            </div>
+            </div> -->
 
             <!-- SCRIPT -->
-            <script src="/public/js/Menu.js"></script>
+            <!-- <script src="/public/js/Effects.js"></script> -->
+            
         </nav>
     </header>
     <main>
+
+       <!--  IMAGEM INICIAL -->
+
         <div id="Background">
             <div>
                 <div id="Bg_filter"></div>
@@ -62,44 +72,255 @@
                 <div class="Bg_content"></div>
                 <span>Make a good <br> decision</span>
                 <div class="Bg_content Down_bar"></div>
-                <a href="#" id="Subscribe"><span>Inscreva-se</span></a>
+                <a href="#" id="Subscribe"><span>Faça Parte!</span></a>
             </div>
         </div>
+
+        <!-- NÚMERO DE IMPACTADOS -->
+
         <div id="Numbers">
             <div>
                 8k <br>
-                <span>Pessoas impactadas</span>
+                <span class="Data one">Pessoas <br> impactadas</span>
             </div>
             <div>
                 120 <br>
-                <span>Voluntários</span>
+                <span  class="Data two">Voluntários</span>
             </div>
             <div>
                 13+ <br>
-                <span>Projetos e programas</span>
+                <span class="Data three">Projetos e <br> programas</span>
             </div>
             <div>
                 3 <br>
-                <span>Continentes envolvidos</span>
+                <span class="Data four">Continentes <br> envolvidos</span>
             </div>
         </div>
+
+        <!-- POSTAGENS DO INSTAGRAM -->
+
         <div id="Instagram">
+            <div id="Ig-text">
+                <h1>INSTAGRAM</h1>
+                <p>Em nosso perfil, trazemos posts informativos sobre temas constantemente
+                    menosprezados da nossa comunidade, personalidades importantes da nossa 
+                    história, recomendações de conteúdo e muito mais. A inteção é utilizar 
+                    uma linguagem simples e acessível para atingir um público mais abrangente 
+                    e propagar informação como forma de combate ao preconceito.
+                </p>
+            </div>
+            <div id="Ig-posts">
+                <div class="High-Edge">
+                    <div>
+                        <img src="../images/Posts/4.png" alt="" height="225px" width="270px">
+                        <a href=""></a>
+                    </div>
+                    <div>
+                        <img src="../images/Posts/5.png" alt="" height="225px" width="270px">
+                        <a href=""></a>
+                    </div>
+                </div>
 
+                <div>
+                    <div>
+                        <img src="../images/Posts/2.png" alt="" height="225px" width="270px">
+                        <a href=""></a>
+                    </div>
+                    <div>
+                        <img src="../images/Posts/3.png" alt="" height="225px" width="270px">
+                        <a href=""></a>
+                    </div>
+                </div>
+
+                <div class="Low-Edge">
+                    <div>
+                        <img src="../images/Posts/6.png" alt="" height="225px" width="270px">
+                        <a href=""></a>
+                    </div>
+                    <div>
+                        <img src="../images/Posts/1.png" alt="" height="225px" width="270px">
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
+            <div id="Divisor">
+                <div class="Divisor"></div>
+            </div>
         </div>
-        <div id="Founders">
 
+        <!-- AVALIAÇÕES -->
+
+        <div id="Founders">
+            <div>
+                <h1>
+                    CONHEÇA OS FUNDADORES
+                </h1>
+            </div>
+
+            <div>
+                <div class="Founders one">
+                    <div>
+                        <div>Coordenadora das redes sociais</div>
+                        <p>
+                            Tendo migrado para várias regiões do Brasil, sua ultima estadia antes de 
+                            embarcar para Noruega estudar em um dos colégios da <i>United World College
+                            </i>, foi Natal - RN. Ativista política e extremamente engajada na 
+                            participação da sociedade civil como forma de transformar o presente em um 
+                            lugar melhor, Luma Rios, é responsável por coordenar os <i>designs</i> e 
+                            time de redes sociais em conjunto com Luis.
+                        </p>
+                    </div>
+                    <img src="../images/Fundadores/luma.png" alt="" height="130px">
+                </div>
+                <div class="Founders two">
+                    <div>
+                        <div>Gerenciador de eventos</div>
+                        <p>
+                            Nascido e criado no Rio de Janeiro - RJ, Francisco Azar é o fundador 
+                            responsável pela facilitação de eventos da iniciativa. Estudando na 
+                            <i>United World College</i>, foi antes aluno do Colégio Pedro II, fundador 
+                            da Modelo Intercolegial de Humaitá (Simulação da Onu) e aprovado para a 
+                            Academia de Liderança Latino-Americana(LALA). Acumula reconhecimentos 
+                            nacionais e internacionais pela <i>Global Citizen</i>, Brasa e 
+                            <i>Peace First</i>.
+                        </p>
+                    </div>
+                    <img src="../images/Fundadores/francisco.png" alt="" height="130px">
+                </div>
+            </div>
+
+            <div>
+                <div class="Founders four">
+                    <div>
+                        <div>Coordenador das redes sociais</div>
+                        <p>
+                            Luis Gustavo Moreira nasceu e cresceu na pequena cidade do interior de 
+                            Minas Gerais, Albertina. Tendo participado de projetos como o Apadrinhaê, 
+                            Clube de Oportunidades Internacionais e Ciclo da Educação, hoje é 
+                            responsável por coordenar a equipe de redes sociais com Luma. Seu foco 
+                            maior é o conteúdo e gerência dos redatores da iniciativa.
+                        </p>
+                    </div>
+                    <img src="../images/Fundadores/luis.png" alt="" height="130px">
+                </div>
+                <div class="Founders five">
+                    <div>
+                        <div>Recursos humanos</div>
+                        <p>
+                            Luiza Brant, a fundadora mais nova da Iniciativa, tem 16 anos, é natural 
+                            de Belo Horizonte - MG e hoje estuda na <i>Think Global School</i>. 
+                            Atualmente, coordena o departamento de Recursos Humanos. Durante sua 
+                            vida acumula atividades de impacto social e reconhecimentos internacionais, 
+                            destacam-se sua posição de recrutadora no Prep Change e aprovação na 
+                            Academia de Liderança Latino-Americana (LALA), programa de verão de 
+                            Stanford, UWC e EMIS.
+                        </p>
+                    </div>
+                    <img src="../images/Fundadores/luiza.png" alt="" height="130px">
+                </div>
+            </div>
+
+            <div>
+                <div class="Founders three">
+                    <div>
+                        <div>Coordenador de relações públicas</div>
+                        <p>
+                            Cauã Rodrigues nasceu em Niterói e migrou por diversas casas e cidades 
+                            até se fixar em Cabo Frio - RJ, onde estuda no IFRJ. Na iniciativa tem 
+                            o papel de coordenador de Relações Públicas. Tem na sua bagagem o 
+                            vice-campeonato nacional do maior torneio de debate da história do 
+                            Brasil, experiência como recrutador do Prep Change, pesquisa pela FAPERJ 
+                            e  aprovação na Academia de Liderança Latino-Americana (LALA) e programa 
+                            de debate de Yale.
+                        </p>
+                    </div>
+                    <img src="../images/Fundadores/caua.jpeg" alt="" height="130px">
+                </div>
+            </div>
         </div>
     </main>
+
+    <!-- RODAPÉ -->
+
     <footer>
         <div id="Mail_letter">
-
+            <h1>FAÇA PARTE!</h1>
+            <p>Fique por dentro de todas as novidades!</p>
+            <div>
+                <input type="email" placeholder="Insira seu email aqui*">
+                <button type="submit">Participar</button>
+            </div>
         </div>
-        <div id="Contact">
 
-        </div>
-        <div id="Informations">
+        <div>
+            <div id="User-Contact">
+                <h1>Entre em contato</h1>
+                <p>
+                    Entre em contato conosco através deste rápido formulário! Basta preencher os dados 
+                    e deixar sua mensagem que retornaremos o mais rápido possível
+                </p>
+    
+                <label for="">Nome</label>
+                <input type="text">
+    
+                <label for="">Email</label>
+                <input type="email">
+    
+                <label for="">Telefone</label>
+                <input type="tel">
+    
+                <label for="">Deixe sua mensagem aqui...</label>
+                <input type="text">
+    
+                <button type="submit">Enviar</button>
+            </div>
 
+            <div>
+                <div id="Our-Contact">
+                    <div>
+                        <h3>ENDEREÇO</h3>
+                        <p>
+                            Rua 44, 383 - Bairro Independência
+                            Aparecida de Goiânia, GO 74967-310
+                        </p>
+                    </div>
+                    <div>
+                        <h3>TELEFONE</h3>
+                        <p>
+                            (62) 3248-6296
+                        </p>
+                    </div>
+                    <div>
+                        <h3>EMAIL</h3>
+                        <p>
+                            Suporte@iniciativairis.com
+                        </p>
+                    </div>
+                </div>
+                <div id="Social-Media">
+                    <div>
+                        <a href=""><img src="../images/facebook-black.png" alt="" height="40px"></a>
+                        <p>Facebook</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="../images/linkedin-black.png" alt="" height="40px"></a>
+                        <p>Linkedin</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="../images/instagram-black.png" alt="" height="40px"></a>
+                        <p>Instagram</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="../images/youtube-black.png" alt="" height="40px"></a>
+                        <p>Youtube</p>
+                    </div>
+                </div>
+                <div id="Iniciativa">
+                    <p>© 2020 por Iniciativa Íris.</p>
+                </div>
+            </div>
         </div>
+
     </footer>
 </body>
 </html>
