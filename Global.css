@@ -1,222 +1,326 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-    outline: none;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Page Bar-->
+    <title>Iniciativa Íris</title>
+    <link rel="icon" type="image/jpg" href="/public/images/Logo.png"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-html {
-    --pink: #ff408e;
-    --white: #ffffff;
-    --burnt-white: #fff6ef;
-    --soft-black: #030303;
-    --black: #000000;
-    --medium-grey: #dfe3e6;
-    --soft-grey: #ebedee;
-    --soft-pink: #ffb3d2;
-    --soft-blue: #99cdeb;
-    --blue: #0081cc;
-    --grey: #a0abb1;
-    font-size: 62.5%;
-}
+    <!-- View Port -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-button, input, textarea, li {
-    font-family: 'Poppins', 'Open Sans' , sans-serif;
-}
+    <!-- CSS -->
+    <link rel="stylesheet" href="/public/css/Index.css">
+    <link rel="stylesheet" href="/public/css/Global.css">
 
-body {
-    box-sizing: border-box;
-    width: 100vw;
-    max-width: 100vw;
-    overflow-x: hidden;
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;300;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/public/scripts/Index.html">
+                <img id="Logo" src="/public/images/Logo.png" alt="logo íris" height="47px">
+            </a>
+            <a id="Project-name" href="/public/scripts/Index.html">
+                Iniciativa Íris
+            </a>
+        </div>
+        <nav>
+            <div id="Menu">
+                <li><a href="" id="On-Page">Início</a></li>
+                <li><a href="">Sobre Nós</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Trabalhe Conosco</a></li>
+                <li><a href="">Doe</a></li>
+            </div>
+
+
+            <div id="Login">
+                <img src="/public/images/login.png" alt="" height="30px">
+            </div>
+
+            <!-- MENU MOBILE -->
+
+            <!-- <div id="Menu-bar">
+                <div id="Bg-bar"></div>
+                <div id="Bar-content">
+                    <li><a href="" class="Page-link">Início</a></li>
+                    <li><a href="" class="Cool-link">Sobre nós</a></li>
+                    <li><a href="" class="Cool-link">Blog</a></li>
+                    <li><a href="" class="Cool-link">Trabalhe Conosco</a></li>
+                    <li><a href="" class="Cool-link">Doe</a></li>
+                </div>
+            </div> -->
+
+            <!-- SCRIPT -->
+            <!-- <script src="/public/js/Effects.js"></script> -->
+            
+        </nav>
+    </header>
+    <main>
+
+       <!--  IMAGEM INICIAL -->
+
+        <div id="Background">
+            <div>
+                <div id="Bg_filter"></div>
+                
+                <div class="Bg_content"></div>
+                <span>Make a good <br> decision</span>
+                <div class="Bg_content Down_bar"></div>
+                <a href="#" id="Subscribe"><span>Faça Parte!</span></a>
+            </div>
+        </div>
+
+        <!-- NÚMERO DE IMPACTADOS -->
+
+        <div id="Numbers">
+            <div>
+                8k <br>
+                <span class="Data one">Pessoas <br> impactadas</span>
+            </div>
+            <div>
+                120 <br>
+                <span  class="Data two">Voluntários</span>
+            </div>
+            <div>
+                13+ <br>
+                <span class="Data three">Projetos e <br> programas</span>
+            </div>
+            <div>
+                3 <br>
+                <span class="Data four">Continentes <br> envolvidos</span>
+            </div>
+        </div>
+
+        <!-- POSTAGENS DO INSTAGRAM -->
+
+        <div id="Instagram">
+            <div id="Ig-text">
+                <h1>INSTAGRAM</h1>
+                <p>Em nosso perfil, trazemos posts informativos sobre temas constantemente
+                    menosprezados da nossa comunidade, personalidades importantes da nossa 
+                    história, recomendações de conteúdo e muito mais. A inteção é utilizar 
+                    uma linguagem simples e acessível para atingir um público mais abrangente 
+                    e propagar informação como forma de combate ao preconceito.
+                </p>
+            </div>
+            <div id="Ig-posts">
+                <div class="High-Edge">
+                    <div>
+                        <img src="../images/Posts/4.png" alt="" height="225px" width="270px">
+                        <a href=""></a>
+                    </div>
+                    <div>
+                        <img src="../images/Posts/5.png" alt="" height="225px" width="270px">
+                        <a href=""></a>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <img src="../images/Posts/2.png" alt="" height="225px" width="270px">
+                        <a href=""></a>
+                    </div>
+                    <div>
+                        <img src="../images/Posts/3.png" alt="" height="225px" width="270px">
+                        <a href=""></a>
+                    </div>
+                </div>
+
+                <div class="Low-Edge">
+                    <div>
+                        <img src="../images/Posts/6.png" alt="" height="225px" width="270px">
+                        <a href=""></a>
+                    </div>
+                    <div>
+                        <img src="../images/Posts/1.png" alt="" height="225px" width="270px">
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
+            <div id="Divisor">
+                <div class="Divisor"></div>
+            </div>
+        </div>
+
+        <!-- AVALIAÇÕES -->
+
+        <div id="Founders">
+            <div>
+                <h1>
+                    CONHEÇA OS FUNDADORES
+                </h1>
+            </div>
+
+            <div>
+                <div class="Founders one">
+                    <div>
+                        <div>Coordenadora das redes sociais</div>
+                        <p>
+                            Tendo migrado para várias regiões do Brasil, sua ultima estadia antes de 
+                            embarcar para Noruega estudar em um dos colégios da <i>United World College
+                            </i>, foi Natal - RN. Ativista política e extremamente engajada na 
+                            participação da sociedade civil como forma de transformar o presente em um 
+                            lugar melhor, Luma Rios, é responsável por coordenar os <i>designs</i> e 
+                            time de redes sociais em conjunto com Luis.
+                        </p>
+                    </div>
+                    <img src="../images/Fundadores/luma.png" alt="" height="130px">
+                </div>
+                <div class="Founders two">
+                    <div>
+                        <div>Gerenciador de eventos</div>
+                        <p>
+                            Nascido e criado no Rio de Janeiro - RJ, Francisco Azar é o fundador 
+                            responsável pela facilitação de eventos da iniciativa. Estudando na 
+                            <i>United World College</i>, foi antes aluno do Colégio Pedro II, fundador 
+                            da Modelo Intercolegial de Humaitá (Simulação da Onu) e aprovado para a 
+                            Academia de Liderança Latino-Americana(LALA). Acumula reconhecimentos 
+                            nacionais e internacionais pela <i>Global Citizen</i>, Brasa e 
+                            <i>Peace First</i>.
+                        </p>
+                    </div>
+                    <img src="../images/Fundadores/francisco.png" alt="" height="130px">
+                </div>
+            </div>
+
+            <div>
+                <div class="Founders four">
+                    <div>
+                        <div>Coordenador das redes sociais</div>
+                        <p>
+                            Luis Gustavo Moreira nasceu e cresceu na pequena cidade do interior de 
+                            Minas Gerais, Albertina. Tendo participado de projetos como o Apadrinhaê, 
+                            Clube de Oportunidades Internacionais e Ciclo da Educação, hoje é 
+                            responsável por coordenar a equipe de redes sociais com Luma. Seu foco 
+                            maior é o conteúdo e gerência dos redatores da iniciativa.
+                        </p>
+                    </div>
+                    <img src="../images/Fundadores/luis.png" alt="" height="130px">
+                </div>
+                <div class="Founders five">
+                    <div>
+                        <div>Recursos humanos</div>
+                        <p>
+                            Luiza Brant, a fundadora mais nova da Iniciativa, tem 16 anos, é natural 
+                            de Belo Horizonte - MG e hoje estuda na <i>Think Global School</i>. 
+                            Atualmente, coordena o departamento de Recursos Humanos. Durante sua 
+                            vida acumula atividades de impacto social e reconhecimentos internacionais, 
+                            destacam-se sua posição de recrutadora no Prep Change e aprovação na 
+                            Academia de Liderança Latino-Americana (LALA), programa de verão de 
+                            Stanford, UWC e EMIS.
+                        </p>
+                    </div>
+                    <img src="../images/Fundadores/luiza.png" alt="" height="130px">
+                </div>
+            </div>
+
+            <div>
+                <div class="Founders three">
+                    <div>
+                        <div>Coordenador de relações públicas</div>
+                        <p>
+                            Cauã Rodrigues nasceu em Niterói e migrou por diversas casas e cidades 
+                            até se fixar em Cabo Frio - RJ, onde estuda no IFRJ. Na iniciativa tem 
+                            o papel de coordenador de Relações Públicas. Tem na sua bagagem o 
+                            vice-campeonato nacional do maior torneio de debate da história do 
+                            Brasil, experiência como recrutador do Prep Change, pesquisa pela FAPERJ 
+                            e  aprovação na Academia de Liderança Latino-Americana (LALA) e programa 
+                            de debate de Yale.
+                        </p>
+                    </div>
+                    <img src="../images/Fundadores/caua.jpeg" alt="" height="130px">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- RODAPÉ -->
+
+    <footer>
+        <div id="Mail_letter">
+            <h1>FAÇA PARTE!</h1>
+            <p>Fique por dentro de todas as novidades!</p>
+            <div>
+                <input type="email" placeholder="Insira seu email aqui*">
+                <button type="submit">Participar</button>
+            </div>
+        </div>
+
+        <div>
+            <div id="User-Contact">
+                <h1>Entre em contato</h1>
+                <p>
+                    Entre em contato conosco através deste rápido formulário! Basta preencher os dados 
+                    e deixar sua mensagem que retornaremos o mais rápido possível
+                </p>
     
-    /* intervalo de tamanho */
-    font-size: clamp(14px, 1.6rem, 2vw);
-    font-family: 'Poppins', 'Open Sans' , sans-serif;
+                <label for="">Nome</label>
+                <input type="text">
+    
+                <label for="">Email</label>
+                <input type="email">
+    
+                <label for="">Telefone</label>
+                <input type="tel">
+    
+                <label for="">Deixe sua mensagem aqui...</label>
+                <input type="text">
+    
+                <button type="submit">Enviar</button>
+            </div>
 
-    background: var(--white);
-}
+            <div>
+                <div id="Our-Contact">
+                    <div>
+                        <h3>ENDEREÇO</h3>
+                        <p>
+                            Rua 44, 383 - Bairro Independência
+                            Aparecida de Goiânia, GO 74967-310
+                        </p>
+                    </div>
+                    <div>
+                        <h3>TELEFONE</h3>
+                        <p>
+                            (62) 3248-6296
+                        </p>
+                    </div>
+                    <div>
+                        <h3>EMAIL</h3>
+                        <p>
+                            Suporte@iniciativairis.com
+                        </p>
+                    </div>
+                </div>
+                <div id="Social-Media">
+                    <div>
+                        <a href=""><img src="../images/facebook-black.png" alt="" height="40px"></a>
+                        <p>Facebook</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="../images/linkedin-black.png" alt="" height="40px"></a>
+                        <p>Linkedin</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="../images/instagram-black.png" alt="" height="40px"></a>
+                        <p>Instagram</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="../images/youtube-black.png" alt="" height="40px"></a>
+                        <p>Youtube</p>
+                    </div>
+                </div>
+                <div id="Iniciativa">
+                    <p>© 2020 por Iniciativa Íris.</p>
+                </div>
+            </div>
+        </div>
 
-/* ESTILIZAÇÃO DOS BOTÕES E INPUT */
-input, button, .button{
-    border-radius: .8rem;
-    height: 3rem;
-}
-
-button, .button{
-    font-family:Arial, Helvetica, sans-serif;
-    line-height: 0;
-    font-weight: 500;
-
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    justify-content: center;
-
-    background: var(--blue);
-    color: var(--white);
-
-    transition: filter .2s;
-
-    cursor: pointer;
-}
-
-button:hover, .button:hover{
-    filter: brightness(1.2);
-}
-
-/* HEADER */
-
-header {
-    box-sizing: border-box;
-    padding: 0.5rem;
-    grid-area: 'nav-bar';
-    display: flex;
-    align-items: center;
-    background: var(--white);
-    justify-content: space-between;
-}
-
-header div{
-    display: flex;
-    align-items: center;
-}
-
-#Logo {
-    margin-left: 3rem;
-    width: 6vw;
-}
-
-#Project-name {
-    margin-left: 1rem;
-    color: var(--black);
-    font-size: 220%;
-    font-family: "Poppins";
-    font-weight: 700;
-}
-
-#Menu{
-    color: var(--black);
-    font-size: 120%;
-    font-weight: 700;
-    margin-right: 3vw;
-    gap: 1rem;
-    align-items: center;
-}
-
-#Menu:hover{
-    cursor: pointer;
-    color: #ff408e;
-    transition: .3s;
-}
-
-#Menu-bar {
-    margin-top: 8.6vh;
-    margin-left: -85vw;
-    height: 6vh;
-    align-items: center;
-    width: 110vw;
-    position: absolute;
-    z-index: 110;
-}
-
-#Bg-bar {
-    background: var(--pink);
-    position: absolute;
-    width: 110vw;
-    height: 6vh;
-    display: none;
-    border-bottom: 3px solid var(--white);
-}
-
-#Bg-bar::before {
-    opacity: 0;
-}
-
-#Bar-content {
-    position: absolute;
-    gap: 5rem;
-    margin-left: 30vw;
-    display: none;
-}
-
-#Hamburguer {
-    border-top: 2px solid var(--black);
-    width: 20px;
-}
-
-#Hamburguer::after, #Hamburguer::before{
-    content: '';
-    display: block;
-    width: 20px;
-    height: 2px;
-    background: var(--black);
-    margin-top: 5px;
-    transition: .3s;
-    position: relative;
-}
-
-#Menu.active #Hamburguer{
-    border-top-color: transparent;
-}
-
-#Menu.active #Hamburguer::after{
-    transform: rotate(-135deg);
-    top: -7px;
-}
-
-#Menu.active #Hamburguer::before{
-    transform: rotate(135deg);
-}
-
-#Login {
-    cursor: pointer;
-    margin-right: 6vw;
-}
-
-#Menu-bar.active #Bg-bar, #Menu-bar.active #Bar-content{
-    display: flex;
-    transition: .5s;
-}
-
-#Menu-bar.active #Bg-bar {
-    opacity: 0.7;
-}
-
-header nav {
-    list-style: none;
-    display: flex;
-}
-
-header nav li{
-    display: inline-block;
-    margin-left: 1vw;
-    font-weight: 700;
-}
-
-nav a{
-    color: var(--white);
-}
-
-.Page-link:after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: var(--white);
-}
-
-.Cool-link::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #fff;
-    transition: .3s;
-}
-
-.Cool-link:hover::after {
-    width: 100%;
-    transition: .3s
-}
+    </footer>
+</body>
+</html>
