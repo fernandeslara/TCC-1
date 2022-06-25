@@ -1,14 +1,13 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 13vh 84vh  65vh 90vh 130vh 130vh;
-    grid-template-areas: 
-        'nav-bar',
-        'bg'
-        'numbers'
-        'instagram'
-        'founders'
-        'informations';
+    grid-template-rows: 13vh 539vh 172vh;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 84vh 65vh 110vh 300vh;
 }
 
 /* IMAGEM BANNER */
@@ -65,6 +64,7 @@ div div span{
     align-items: center;
     font-size: 60%;
     transform: translate(150%, 190%);
+    transition: .5s;
 }
 
 #Subscribe span{
@@ -91,7 +91,7 @@ div div span{
     height: 65vh;
     width: 100vw;
     gap: 5rem;
-    padding-left: 10vw;
+    padding-left: 2vw;
 }
 
 #Numbers div{
@@ -101,12 +101,402 @@ div div span{
     color: var(--pink);
     letter-spacing: 0.5rem;
     width: 20vw;
+    height: 35vh;
+    text-align: center;
 }
 
-#Numbers div span{
+.Data{
     letter-spacing: normal;
     font-weight: 500;
     font-size: 30%;
     color: var(--black);
-    margin-left: -10rem;
+    margin-left: -6.5rem;
+}
+
+/* INSTAGRAM */
+
+#Instagram{
+    grid-area: 'instagram';
+    height: 110vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 9fr 1fr;
+}
+
+#Divisor{
+    margin-left: 48.5vw;
+    height: 5rem;
+    padding-top: 5.424rem;
+}
+
+.Divisor{
+    width: 5rem;
+    height: 5rem;
+    background: linear-gradient(to bottom, var(--black), var(--black) 50%, var(--white) 50%);
+    clip-path: circle(50% at 50% 50%);
+    transition: 1s;
+}
+
+.Divisor:hover{
+    transform: rotate(180deg);
+    transition: 1s;
+}
+
+#Ig-text{
+    height: 90vh;
+    width: 60vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    text-align: justify;
+    padding: 5rem;
+}
+
+#Ig-text h1{
+    font-size: 550%;
+    margin-top: 12rem;
+}
+
+#Ig-text p{
+    font-size: 125%;
+}
+
+#Ig-posts{
+    width: 40vw;
+    display: inline-block;
+    padding-left: 6rem;
+}
+
+#Ig-posts div{
+    display: flex;
+}
+
+#Ig-posts a{
+    position: absolute;
+    height: 225px;
+    width: 270px;
+    transition: 1s;
+}
+
+#Ig-posts a p{
+    font-weight: 500;
+}
+
+#Ig-posts a::after{
+    display: block;
+    text-align: center;
+    width: 270;
+    height: 0;
+    color: var(--white);
+    transition: 1s;
+}
+
+#Ig-posts a:hover{
+    box-shadow: rgba(0, 0, 0, 0.6) 0px -190px 50px -60px inset;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#Ig-posts a:hover::after{
+    content: 'Lin da Quebrada    @iniciativaíris';
+    text-align: center;
+    padding-top: 150px;
+    font-weight: 500;
+    font-size: 115%;
+    height: 100%;
+    transition: 3s;
+}
+
+#Ig-posts div div{
+    transition: 1s;
+}
+
+#Ig-posts > div > div:hover{
+    transform: translateY(-20px);
+    transition: 1s;
+}
+
+.High-Edge > :first-child > :first-child{
+    border-radius: 10px 0 0 0;
+}
+
+.High-Edge > :last-child > :first-child{
+    border-radius: 0 10px 0 0;
+}
+
+.Low-Edge > :first-child > :first-child{
+    border-radius: 0 0 0 10px;
+}
+
+.Low-Edge > :last-child > :first-child{
+    border-radius: 0 0 10px 0;
+}
+
+/* FOUNDERS */
+
+#Founders{
+    grid-area: 'founders';
+    height: 280vh;
+    background: var(--black);
+    align-items: center;
+    padding-top: 15rem;
+    text-align: center;
+}
+
+#Founders > div h1{
+    color: var(--white);
+    margin-bottom: 15rem;
+}
+
+#Founders > div ~ div{
+    margin-bottom: 5rem;
+}
+
+.Founders{
+    margin-bottom: 6rem;
+    width: 35vw;
+    height: 40rem;
+    border-radius: 20px;
+    display: inline-block;
+    background: var(--blue);
+    text-align: center;
+    transition: .5s;
+}
+
+.Founders:hover{
+    background: var(--pink);
+    transition: .5s;
+}
+
+.Founders > div{
+    background: var(--soft-grey);
+    border-radius: 20px;
+    margin: .5rem;
+    padding: 3rem;
+    height: 32rem;
+    text-align: initial;
+}
+
+.Founders > div > div{
+    background: var(--pink);
+    text-align: center;
+    padding: .5rem;
+    border-radius: 40px;
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: 3.5rem;
+}
+
+.Founders img{
+    border: 4px solid var(--blue);
+    border-radius: 100px;
+    width: 130px;
+}
+
+.Founders p{
+    color: var(--black);
+    width: 45rem;
+}
+
+.Founders.one{
+    margin-right: 2rem;
+}
+
+.Founders.one > div > div{
+    width: 30rem;
+}
+
+.Founders.two{
+    margin-left: 2rem;
+}
+
+.Founders.two > div > div{
+    width: 25rem;
+}
+
+
+.Founders.three > div > div{
+    width: 33rem;
+}
+
+.Founders.four{
+    margin-right: 2rem;
+}
+
+.Founders.four > div > div{
+    width: 30rem;
+}
+
+.Founders.five{
+    margin-left: 2rem;
+}
+
+.Founders.five > div > div{
+    width: 20rem;
+}
+
+/* FOOTER */
+
+footer{
+    grid-area: '';
+    width: 100vw;
+    display: block;
+    background: var(--soft-grey);
+}
+
+footer > div ~div{
+    display: flex;
+    margin-top: 12rem;
+}
+
+#Mail_letter{
+    display: block;
+    background: var(--blue);
+    text-align: center;
+    height: 50vh;
+    width: 100vw;
+    color: var(--white);
+    padding-top: 6rem;
+    margin-top: 20rem;
+}
+
+#Mail_letter h1{
+    font-size: 450%;
+    margin-bottom: 1rem;
+}
+
+#Mail_letter p{
+    font-size: 200%;
+    font-weight: 500;
+}
+
+#Mail_letter div{
+    display: flex;
+    justify-content: center;
+    margin-top: 9.3rem;
+}
+
+#Mail_letter div input{
+    height: 8rem;
+    width: 75rem;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    padding-left: 3rem;
+}
+
+#Mail_letter div input::placeholder{
+    font-weight: 700;
+}
+
+#Mail_letter div button{
+    height: 8rem;
+    width: 15rem;
+    border: 2px solid var(--white);
+    background: var(--pink);
+    color: var(--white);
+    text-align: center;
+    align-items: center;
+}
+
+#User-Contact{
+    margin-left: 15rem;
+    width: 30vw;
+    font-weight: 200;
+    font-size: 90%;
+}
+
+#User-Contact p{
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+#User-Contact label{
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#User-Contact label p,input{
+    margin-left: 2.5rem;
+}
+
+#User-Contact input{
+    border: none;
+    border-bottom: 1px solid var(--black);
+    width: 27rem;
+    background: none;
+}
+
+#User-Contact button{
+    margin-top: 3rem;
+    border: none;
+    background: none;
+    margin-left: 30rem;
+}
+
+#User-Contact button:hover{
+    color: var(--pink);
+    transition: 0.5s;
+}
+
+#Our-Contact{
+    margin-top: 10rem;
+    margin-left: 30rem;
+    display: flex;
+    width: 70rem;
+    font-weight: 300;
+    height: 10rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+#Our-Contact div{
+    width: 18rem;
+}
+
+#Our-Contact div h3{
+    font-weight: 300;
+}
+
+#Our-Contact div p{
+    margin-top: 1rem;
+    font-size: 80%;
+}
+
+#Our-Contact > div ~ div{
+    margin-top: -4rem;
+}
+
+#Social-Media{
+    margin-left: 34rem;
+    display: flex;
+    gap: 1.5rem;
+    height: 10rem;
+    width: 44rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+#Social-Media div{
+    width: 10rem;
+    height: 10rem;
+    font-weight: 300;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    padding-top: 1.25rem;
+}
+
+#Social-Media div a{
+    display: inline-block;
+}
+
+#Iniciativa{
+    font-weight: 300;
+    font-size: 80%;
+    position: absolute;
+    margin-top: 3.5rem;
+    margin-left: 31rem;
 }
